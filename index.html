@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Mi Primer HTML</title>
+        <title>My First HTML</title>
     </head>
     <body>
         <h2>Aplicacciones Web</h2>
@@ -40,6 +40,20 @@
                 <td><label>Joaquin</label></td>
             </tr>
         </table>
+        <div>
+            <button>Say Hello!</button>
+        </div>
         <a href = "https://github.com/DiteRuiz20/RuizAldo.git">Enlace A Repositorio</a>
     </body>
+
+    <script>
+        const MyButton = document.getElementsByTagName("button");
+
+        function SayHello (){
+            console.log("Whats rollin");
+        }
+
+        MyButton.item(0).addEventListener("mouseover", SayHello);
+
+    </script>
 </html>
